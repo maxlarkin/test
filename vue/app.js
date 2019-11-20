@@ -10,3 +10,12 @@ var example1 = new Vue({
         ]
     }
 })
+var example1 = new Vue({
+    el: '#menu',
+    data: {
+        knops: [
+            { knop: 'пользователь' },
+            { knop: 'данные' }
+        ]
+    }
+})
