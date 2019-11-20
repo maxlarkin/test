@@ -11,11 +11,11 @@
 </head>
 <body>
 
-<blog-post
-        v-for="post in posts"
-        v-bind:key="posts.id"
-        v-bind:title="post.title"
->{{post.title}}</blog-post>
+<ul id="example-1">
+    <div v-for="user in users">
+        {{ user.user }}
+    </div>
+</ul>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="app.js"></script>

@@ -1,10 +1,12 @@
-new Vue({
-    el: '#blog-post-demo',
+var example1 = new Vue({
+    el: '#example-1',
     data: {
-        post: [
-            { id: 1, title: 'My journey with Vue' },
-            { id: 2, title: 'Blogging with Vue' },
-            { id: 3, title: 'Why Vue is so fun' }
+        users: [
+            { user: 'id - 59247595052' },
+            { user: 'имя - иван' },
+            { user: 'фамилия - иванов' },
+            { user: 'отчество - иванович' },
+            { user: 'должность - строитель' }
         ]
     }
 })
