@@ -1,0 +1,13 @@
+<svg id="menu_m.svg" xmlns="http://www.w3.org/2000/svg" width="37" height="25" viewBox="0 0 37 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 11px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_скругл._углы_7_копия_2" data-name="Прямоугольник, скругл. углы 7 копия 2" class="cls-1" d="M270,19h24a1,1,0,0,1,0,2H270A1,1,0,0,1,270,19Zm0,6h24a1,1,0,1,1,0,2H270A1,1,0,1,1,270,25Zm0,6h24a1,1,0,0,1,0,2H270A1,1,0,0,1,270,31Z" transform="translate(-263.5 -13.5)"/>
+</svg>
