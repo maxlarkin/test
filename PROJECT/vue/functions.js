@@ -15,11 +15,12 @@ Vue.component('tab-пользователь', {
   	<div class="posts-tab">
       <div class="posts-sidebar">
         <p
-          v-for="post in posts"
-          v-bind:class="{ selected: post === selectedPost }"
-					v-on:click="selectedПользователь = пользователь"
+        class="user"
+        v-for="post in posts"
+        v-bind:class="{ selected: post === selectedPost }"
+        v-on:click="selectedПользователь = пользователь"
         >
-          {{ post.user }}
+            {{ post.user }}
         </p>
       </div>
     </div>

@@ -1,7 +1,12 @@
 .body{
     background: black;
+    color: white;
 }
 .tab-content{
     border: 2px solid white;
-    color: white;
 }
+.tabs li {display: inline-block;}
+.btn.btn-white {color: white;border: 1px solid;}
+.tabs li.active .btn.btn-white,
+.tabs li .btn.btn-white:hover {color: red;}
+.tab-content > * {display: none;}

@@ -9,26 +9,28 @@
     <title>vue</title>
 </head>
 <body class="body">
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div id="dynamic-component-demo">
-                <button
-                        v-for="tab in tabs"
-                        :key="tab"
-                        :class="['tab-button', { active: currentTab === tab }]"
-                        @click="currentTab = tab"
-                >{{ tab }}</button>
-                <keep-alive>
-                    <component
-                            v-bind:is="currentTabComponent"
-                            class="tab"
-                    ></component>
-                </keep-alive>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div id="dynamic-component-demo">
+                    <button
+                            class="btn btn-white"
+                            v-for="tab in tabs"
+                            :key="tab"
+                            :class="['tab-button', { active: currentTab === tab }]"
+                            @click="currentTab = tab"
+                    >{{ tab }}</button>
+                    <keep-alive>
+                        <component
+                                v-bind:is="currentTabComponent"
+                                class="tab"
+                        ></component>
+                    </keep-alive>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 <script src="functions.js"></script>
