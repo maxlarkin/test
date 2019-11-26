@@ -1,6 +1,7 @@
 .body{
     background: #070707;
     color: white;
+    float: top;
 }
 .tab-button {
     padding: 6px 10px;

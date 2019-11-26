@@ -11,36 +11,59 @@
 </head>
 <body class="body">
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-12 tabs">
-                    <ul class="m-0 p-0">
-                        <li class="active">
-                            <a class="btn btn-white" href="#user">Пользователь</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-white" href="#data">Данные</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row tab-content mx-0">
-                <div class="col-12 active" id="user">
-                    <h2>id-2464563747<br>имя - Андрей<br>фамилия - Рожков<br>отчество - Николаевий<br>должность - актер</h2>
-                </div>
-                <div class="col-12" id="data">
-                    <center><h2>e-mail - maxlarkin@mail.com<br>телефон - 8 548 644 22 73<br>адрес - ижевск<br>пол - мужской<br>возраст - 25</h2></center>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="app">
+    {{ message }}
+</div>
+<div id="app-2">
+  <span :title="message">
+    дата
+  </span>
+</div>
+<div id="app-3">
+    <span v-if="seen">видно</span>
+</div>
+<div id="app-4">
+    <ol>
+        <li v-for="user in users">
+            {{ user.text }}
+        </li>
+    </ol>
+</div>
+<div id="app-5">
+    <p>{{message}}</p>
+    <button @click="reverseMessage">перевернуть</button>
 </div>
 
+<!--<div class="container-fluid">-->
+    <!--<div class="row">-->
+        <!--<div class="container">-->
+            <!--<div class="row mt-5">-->
+                <!--<div class="col-12 tabs">-->
+                    <!--<ul class="m-0 p-0">-->
+                        <!--<li class="active">-->
+                            <!--<a class="btn btn-white" href="#user">Пользователь</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="btn btn-white" href="#data">Данные</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row tab-content mx-0">-->
+                <!--<div class="col-12 active" id="user">-->
+                    <!--<h2>id-2464563747<br>имя - Андрей<br>фамилия - Рожков<br>отчество - Николаевий<br>должность - актер</h2>-->
+                <!--</div>-->
+                <!--<div class="col-12" id="data">-->
+                    <!--<center><h2>e-mail - maxlarkin@mail.com<br>телефон - 8 548 644 22 73<br>адрес - ижевск<br>пол - мужской<br>возраст - 25</h2></center>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 <script src="functions.js"></script>
 </body>
 </html>
