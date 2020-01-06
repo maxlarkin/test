@@ -7,15 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>vue</title>
+    <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
 </head>
 <body>
 
-<div id="vue" v-for="user in users">
-    {{ message }}
-    {{ user.content }}
+<div id="vue">
+
+    <!--<div :title="message">-->
+        <!--<hr>-->
+        <!--{{ message }}-->
+        <!--<hr>-->
+        <!--<h5 v-if="!status">Свойство равно 1</h5>-->
+        <!--<h5 v-else-if="status == 2">Свойство равно 2</h5>-->
+        <!--<h5 v-else>Свойство равно {{ status }}</h5>-->
+    <!--</div>-->
+
+    <!--<template v-if="status == 1">-->
+        <!--<h5>Заголовок</h5>-->
+        <!--<p>Описание</p>-->
+    <!--</template>-->
+    <!--<template v-else>-->
+        <!--<h5>Заголовок {{ status }}</h5>-->
+        <!--<p>Описание {{ status }}</p>-->
+    <!--</template>-->
+
+    <!--<h5 v-show="status">-->
+        <!--Заголовок с v-show-->
+    <!--</h5>-->
+
+
+    <div :class="[ isActive ? 'active' : 'disabled', 'defailt' ]">
+
+    </div>
 </div>
 
-<script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
 <script src="functions.js"></script>
 </body>
 </html>
