@@ -3,7 +3,7 @@ new Vue({
     data: {
         message: 'сообщение: что то здесь есть',
         users: [
-            {title: 'VUE', content: 'CONTENT'},
+            {title: 'Vue', content: 'content'},
         ],
     },
 });
