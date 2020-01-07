@@ -8,38 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <title>vue</title>
     <script src=" https://cdn.jsdelivr.net/npm/vue/dist/vue.js "></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
 </head>
 <body>
 
 <div id="vue">
 
-    <!--<div :title="message">-->
-        <!--<hr>-->
-        <!--{{ message }}-->
-        <!--<hr>-->
-        <!--<h5 v-if="!status">Свойство равно 1</h5>-->
-        <!--<h5 v-else-if="status == 2">Свойство равно 2</h5>-->
-        <!--<h5 v-else>Свойство равно {{ status }}</h5>-->
-    <!--</div>-->
+    <button type="button" @click="getHashtegs">axios</button>
 
-    <!--<template v-if="status == 1">-->
-        <!--<h5>Заголовок</h5>-->
-        <!--<p>Описание</p>-->
-    <!--</template>-->
-    <!--<template v-else>-->
-        <!--<h5>Заголовок {{ status }}</h5>-->
-        <!--<p>Описание {{ status }}</p>-->
-    <!--</template>-->
+    <ul>
+        <li v-for="hashteg in hashtegs">{{ hashteg }}</li>
+    </ul>
 
-    <!--<h5 v-show="status">-->
-        <!--Заголовок с v-show-->
-    <!--</h5>-->
-
-
-    <div :class="[ isActive ? 'active' : 'disabled', 'defailt' ]">
-
-    </div>
 </div>
+
+<!--<div id="test">-->
+    <!--<div class="continer-fluid">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<button v-for="user in users" class="knop">-->
+                    <!--<h3>{{user.title}}</h3>-->
+                <!--</button>-->
+            <!--</div>-->
+            <!--<div class="tab">-->
+                <!--<ul>-->
+                    <!--<template v-for="user in users">-->
+                        <!--<h2>-->
+                            <!--<li>ID: {{ user.id }}</li>-->
+                            <!--<li>Имя: {{ user.name }}</li>-->
+                            <!--<li>Фамилия: {{ user.fam }}</li>-->
+                            <!--<li>Отчество: {{ user.otch }}</li>-->
+                            <!--<li>должность: {{ user.post }}</li>-->
+                        <!--</h2>-->
+                    <!--</template>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 <script src="functions.js"></script>
 </body>
