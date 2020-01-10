@@ -12,40 +12,11 @@
 </head>
 <body>
 
-<div id="vue">
+<div id="vue" v-if="user in users">
 
-    <button type="button" @click="getHashtegs">axios</button>
 
-    <ul>
-        <li v-for="hashteg in hashtegs">{{ hashteg }}</li>
-    </ul>
 
 </div>
-
-<!--<div id="test">-->
-    <!--<div class="continer-fluid">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<button v-for="user in users" class="knop">-->
-                    <!--<h3>{{user.title}}</h3>-->
-                <!--</button>-->
-            <!--</div>-->
-            <!--<div class="tab">-->
-                <!--<ul>-->
-                    <!--<template v-for="user in users">-->
-                        <!--<h2>-->
-                            <!--<li>ID: {{ user.id }}</li>-->
-                            <!--<li>Имя: {{ user.name }}</li>-->
-                            <!--<li>Фамилия: {{ user.fam }}</li>-->
-                            <!--<li>Отчество: {{ user.otch }}</li>-->
-                            <!--<li>должность: {{ user.post }}</li>-->
-                        <!--</h2>-->
-                    <!--</template>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 
 <script src="functions.js"></script>
 </body>

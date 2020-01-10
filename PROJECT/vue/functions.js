@@ -1,30 +1,22 @@
-var app = new Vue({
+new Vue({
     el: '#vue',
-    data: {
-        hashtegs: [],
-        url: {
-            hashtegs: 'https://dka-develop.ru/api?type=hashtag',
-            cities: 'https://dka-develop.ru/api?type=city'
+    data() {
+        return {
+            info: null,
+            loading: true,
+            errored: false
+        };
+    },
+    filters: {
+        currencydecimal(value) {
+            return value.toFixed(2);
         }
     },
-    created: function() {
-
+    mounted() {
+        axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+            .then(respo)
     },
     methods: {
-        getHashtegs() {
-            axios.get(this.url.hashtegs).then((responce) => {
-                console.log(responce.data);
-                this.hashtegs = responce.data;
-            })
-        }
-    },
+
+    }
 });
-// new Vue({
-//     el: '#test',
-//     data: {
-//         users: [
-//             {title: 'Пользователь', id: '1', name: 'Максим', fam: 'Ларкин', otch: 'Сергеевич', post: 'программист'},
-//             {title: 'Данные', id: '2', name: 'Андрей', fam: 'Сафронов', otch: 'Юрьевич', post: 'архитектор'}
-//         ]
-//     }
-// })

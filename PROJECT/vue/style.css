@@ -1,14 +1,17 @@
-/*.knop{*/
-    /*color: white;*/
-    /*background: black;*/
-    /*border: 2px solid red;*/
-    /*height: auto;*/
-    /*margin-right: 10%;*/
-/*}*/
-/*.knop-hover{*/
-    /*border: 2px solid white;*/
-/*}*/
-/*.container{*/
-    /*margin-left: 15%;*/
-    /*margin-right: 15%;*/
-/*}*/
+body {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
+#app {
+    margin-top: 20px;
+    padding: 0 40px 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+
+/*                                              justify-content: center;                                         */
