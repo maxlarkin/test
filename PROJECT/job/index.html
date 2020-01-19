@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>[[*pagetitle]] - [[++site_name]]</title>
+    <base href="[[!++site_url]]" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container-fluid content-body">
+
+        <!--raywart контакты-->
+            <div class="row contacts pt-5">
+                <div class="container">
+                    <h3>Контакты</h3>
+                    <div class="row align-items-center ">
+                        <div class="col-lg-2 ">
+                            <p>Адрес</p>
+
+                            [[$address]]
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-3 order-lg-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>Телефон</p>
+                                            <p>
+
+                                                [[++phone]]
+
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>Почта</p>
+                                            <p>
+
+                                                [[++email]]
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto order-lg-2">
+                                    <p>Социальные сети:</p>
+                                    <div class="row socials-links mb-lg-0 mb-3">
+
+                                        [[$socials]]
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                            var setting = {"height":540,"width":754,"zoom":16,"queryString":"улица Максима Горького, 85, Ижевск, Россия","place_id":"EkrRg9C70LjRhtCwINCc0LDQutGB0LjQvNCwINCT0L7RgNGM0LrQvtCz0L4sIDg1LCDQmNC20LXQstGB0LosINCg0L7RgdGB0LjRjyIwEi4KFAoSCat3gkQlOeFDETH5rYfoVZmXEFUqFAoSCXUbGA0wOeFDEcvCA6H3WJZW","satellite":false,"centerCoord":[56.85098768690102,53.20160762579796],"cid":"0xc275809148cab5f5","lang":"ru","cityUrl":"/russia/volozhka-295087","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"146945"};
+                            var d = document;
+                            var s = d.createElement('script');
+                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=146945';
+                            s.async = true;
+                            s.onload = function (e) {
+                                window.OneMap.initMap(setting)
+                            };
+                            var to = d.getElementsByTagName('script')[0];
+                            to.parentNode.insertBefore(s, to);
+                        })();</script><a href="https://1map.com/ru/map-embed?embed_id=146945">1 Map</a></div>
+                    </div>
+                </div>
+            </div>
+        <!--raywart контакты-->
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
